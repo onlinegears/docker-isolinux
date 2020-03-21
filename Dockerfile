@@ -1,7 +1,7 @@
 FROM onlinegears/base:latest
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
 	isolinux \
 	mkisofs xorriso \
 	cpio \
-	&& apt clean
+	&& apt-get clean
